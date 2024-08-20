@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Verification</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="otp-container">
+        <!-- Mobile Number Form -->
+        <form id="mobile-form">
+            <label for="mobile-number">Enter your mobile number:</label>
+            <input type="text" id="mobile-number" name="mobile-number" placeholder="1234567890">
+            <button type="submit">Send OTP</button>
+        </form>
+
+        <!-- OTP Verification Section -->
+        <div id="otp-section" style="display: none;">
+            <form id="otp-form">
+                <label for="otp">Enter OTP:</label>
+                <input type="text" id="otp" name="otp" placeholder="Enter OTP">
+                <button type="submit">Verify OTP</button>
+            </form>
+        </div>
+
+        <p id="message"></p>
+    </div>
+    <script src="otp.js"></script>
+</body>
+</html>

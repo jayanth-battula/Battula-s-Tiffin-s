@@ -1,0 +1,205 @@
+/* Basic Reset and Body Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background: linear-gradient(135deg, #f0f0f0, #d0d0d0); /* Subtle gradient background */
+    background-attachment: fixed; /* Fix background for parallax effect */
+}
+
+/* Header Styling */
+header {
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent dark background */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 1; /* Ensure it is above other elements */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Glowing text effect */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #fff; /* Highlight link on hover */
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7); /* Glow effect */
+}
+
+/* Main Section Styling */
+main {
+    padding: 20px;
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvCbc_dPkcbRCQu168NIBEHI7gh9QqT45X_7P6xOLPH4Ye35upRi8tiI0fVIZmbknWI-A&usqp=CAU') no-repeat center center;
+    background-size: cover; /* Ensures the background covers the area */
+}
+
+/* Item Styling */
+.item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 10px;
+}
+
+.item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.item:hover img {
+    transform: scale(1.1); /* Slightly zoom in image on hover */
+}
+
+.item .info {
+    padding: 10px;
+    flex: 1;
+}
+
+.item h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #4CAF50;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.item p {
+    margin: 5px 0;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity button {
+    background: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.quantity button.decrease {
+    background: #f44336;
+}
+
+.quantity input {
+    width: 50px;
+    text-align: center;
+    font-size: 1.2em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.quantity .price {
+    font-size: 1.2em;
+    color: #4CAF50;
+    margin-left: 10px;
+}
+
+/* Summary Bar Styling */
+#summary {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    width: 300px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#summary h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #4CAF50;
+}
+
+#summary ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#summary ul li {
+    margin-bottom: 10px;
+}
+
+#summary ul li span {
+    font-weight: bold;
+}
+
+#summary #total {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #4CAF50;
+}
+/* Checkout Button Styling */
+#checkout-btn
+ {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding inside the button */
+    font-size: 1.2em; /* Larger text size */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-transform: uppercase; /* Uppercase text */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+/* Button Hover Effect */
+#checkout-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly larger on hover */
+}
+
+/* Button Disabled State */
+#checkout-btn:disabled {
+    background-color: #c6c6c6; /* Gray background for disabled state */
+    cursor: not-allowed; /* Not-allowed cursor for disabled state */
+}
+
+
+/* Footer Styling */
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

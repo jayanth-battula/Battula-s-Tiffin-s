@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <h2 id="form-title">Sign In</h2>
+            <form id="loginForm" class="form">
+                <div class="textbox">
+                    <input type="text" id="username" placeholder="Username" required>
+                </div>
+                <div class="textbox">
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+                <p id="error-message" style="color: red; display: none;">Please fill out both fields.</p>
+                <p id="toggle-link">
+                    <a href="#" id="toggle-form">Don't have an account? Sign Up</a>
+                </p>
+            </form>
+            <form id="signupForm" class="form" style="display: none;">
+                <div class="textbox">
+                    <input type="text" id="signup-username" placeholder="Username" required>
+                </div>
+                <div class="textbox">
+                    <input type="password" id="signup-password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="btn">Sign Up</button>
+                <p id="signup-error-message" style="color: red; display: none;">Please fill out both fields.</p>
+                <p id="signup-toggle-link">
+                    <a href="#" id="signup-toggle-form">Already have an account? Sign In</a>
+                </p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
